@@ -1,4 +1,4 @@
-# building-docker-images
+# Three ways to build Docker images
 In this repository you will find three ways used to build docker images
 
 # Three ways to build Docker Images
@@ -15,6 +15,7 @@ Step 1: Clone the project and access “normal-build” directory \
 $ git clone https://github.com/ndekwe/buildingDockerImages.git \
 $ cd normal-build/
 
+Check the Dockerfile under "building-docker-images/normal-build/" \
 Step 2: Build the Dockerfile using the following command: \
 $ docker image build -t web-server-docker-image . \
 The image has built successfully: \
@@ -30,6 +31,8 @@ To access the web server, you can run URL http://localhost/ or http://127.0.0.1/
 
 # 2. Building Docker image from a jar file
 ![alt text](images/docker-image-from-jar.png)
+
+Use files under "building-docker-images/buildFromPackage/" to build from a jar file\ 
 
 Step 1: Access “buildFromPackage” directory and compile the program\
 $ javac WebServer.java
@@ -49,8 +52,13 @@ $ docker run -p 127.0.0.1:80:8089 web-server-docker-image-from-jar:latest
 
 # 3. Building Docker image with multi-stages build
 ![alt text](images/multi-stage-build.png)
-# Usage
-- For normal build check the Dockerfile under "building-docker-images/normal-build/"
-- For multi-stages build check files under "building-docker-images/multi-stage-build/"
-- Use files under "building-docker-images/buildFromPackage/" to build from a jar file
+
+For multi-stages build check files under "building-docker-images/multi-stage-build/"
+
+Run the following command: \
+$ docker build -t web-server-docker-image-multi-stage .
+
+Listing images: \
+$ docker image ls
+
 
