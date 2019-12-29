@@ -7,7 +7,7 @@ This repository holds files which have been used to describe three ways of build
 # The 3 ways are the following:
 # 1. Building Docker image with a normal build
 
-images/normal-docker-build.png
+![Normal Build] images/normal-docker-build.png
 
 2. Building Docker image from a jar file
 3. Building Docker image with multi-stages build
