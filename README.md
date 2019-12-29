@@ -1,5 +1,5 @@
 # Three ways to build Docker images
-In this repository you will find the codes and images used to write a blog post related to three ways used to build docker images. Three folders of this projects, namely "normal-build", "buildFromPackage" and "multi-stage-build", hold the codes used for each way. 
+In this repository you will find the codes and images used to write a blog post related to three ways used to build docker images. Three folders of this projects, namely "[normal-build](https://github.com/ndekwe/building-docker-images/tree/master/normal-build)", "[buildFromPackage](https://github.com/ndekwe/building-docker-images/tree/master/buildFromPackage)" and "[multi-stage-build](https://github.com/ndekwe/building-docker-images/tree/master/multi-stage-build)", hold the codes used for each way. 
 
 # 1. Building Docker image with a normal build
 ![alt text](images/normal-docker-build.png) 
