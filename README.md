@@ -31,6 +31,22 @@ To access the web server, you can run URL http://localhost/ or http://127.0.0.1/
 # 2. Building Docker image from a jar file
 ![alt text](images/docker-image-from-jar.png)
 
+Step 1: Access “buildFromPackage” directory and compile the program\
+$ javac WebServer.java
+
+Step 2: Creating a “jar” file \
+$ jar cvmf MANIFEST.MF webserver.jar WebServer.class
+
+Building an image from the jar file:\
+$ docker build -t web-server-docker-image-from-jar .
+
+Once the build is done successfully, you can check the information about the image:\
+$ docker image ls | grep web-server-docker-image-from-jar
+
+You can run it in order to test the web server program:
+$ docker run -p 127.0.0.1:80:8089 web-server-docker-image-from-jar:latest
+
+
 # 3. Building Docker image with multi-stages build
 ![alt text](images/multi-stage-build.png)
 # Usage
