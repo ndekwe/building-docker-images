@@ -8,7 +8,7 @@ To build the docker image with normal build, follow below steps:
 
 Step 1: Clone the project and access “normal-build” directory \
 $ git clone https://github.com/ndekwe/building-docker-images.git \
-$ cd normal-build/
+$ cd building-docker-images/normal-build/
 
 Check the Dockerfile under "building-docker-images/normal-build/" \
 Step 2: Build the Dockerfile using the following command: \
