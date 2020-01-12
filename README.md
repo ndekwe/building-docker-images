@@ -6,22 +6,28 @@ In this repository you will find the codes and images used to write a blog post 
 
 To build the docker image with normal build, follow below steps: 
 
-Step 1: Clone the project and access “normal-build” directory \
-$ git clone https://github.com/ndekwe/building-docker-images.git \
-$ cd building-docker-images/normal-build/
+Step 1: Clone the project and access “normal-build” directory
 
-Check the Dockerfile under "building-docker-images/normal-build/" \
-Step 2: Build the Dockerfile using the following command: \
-$ docker image build -t web-server-docker-image . \
-The image has built successfully: \
-$ docker image ls | grep web-server-docker-image \
-web-server-docker-image            latest               195d2421a637        57 seconds ago      643MB 
+        $ git clone https://github.com/ndekwe/building-docker-images.git 
+        $ cd building-docker-images/normal-build/
 
-To run the web server container from the created image: \
-$ docker run -p 127.0.0.1:80:8089 web-server-docker-image:latest 
+Check the Dockerfile under "building-docker-images/normal-build/" 
+Step 2: Build the Dockerfile using the following command: 
+        
+        $ docker image build -t web-server-docker-image . 
 
-Checking running containers: \
-$ docker container ls \
+The image has built successfully: 
+      
+      $ docker image ls | grep web-server-docker-image 
+        web-server-docker-image            latest               195d2421a637        57 seconds ago      643MB 
+
+To run the web server container from the created image: 
+
+      $ docker run -p 127.0.0.1:80:8089 web-server-docker-image:latest 
+
+Checking running containers: 
+
+      $ docker container ls 
 To access the web server, you can run URL http://localhost/ or http://127.0.0.1/ in the browser. 
 
 # 2. Building Docker image from a jar file
