@@ -12,3 +12,5 @@ COPY --from=MEDIUM-BUILDER /app/target/multi-stage-build-1.0-SNAPSHOT.jar .
 EXPOSE 8089
 CMD java -jar multi-stage-build-1.0-SNAPSHOT.jar
 
+
+
